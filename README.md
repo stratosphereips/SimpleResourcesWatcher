@@ -1,10 +1,10 @@
 # Simple Resource Watcher
 
-This simple program is designed to monitor certain resources in a Linux based server and send alerts to Slack.
+This simple program is designed to monitor the network bandwidth and available memory in a Linux server. If the network upload larger than 30 Mbps or the available memory is lower than 4 GB, it will send an alert to Slack. SRWatcher communicates with Slack using webhooks specified in the configuration file `slack.auth`. Slack alerts are send by default to channel #alerts.
 
 ## Dependencies
 
-The SRWatcher requires the following packages: curl, ps, free
+The SRWatcher requires the following packages: curl, ps, free.
 
 ## Usage
 
@@ -16,7 +16,7 @@ Author: Veronica Valeros (vero.valeros@gmail.com)
 ./srwatcher.sh [interface] [slack.auth]
 ```
 
-Example output:
+Command line output example:
 ```
 ./srwatcher.sh eth0 slack.auth
 
