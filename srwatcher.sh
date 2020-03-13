@@ -69,4 +69,4 @@ fi
 
 #COMMAND LINE OUTPUT
 echo "$(date +"%Y/%m/%d %T"), $NET_MESSAGE, $MEM_MESSAGE." 
-echo "$(date +"%Y/%m/%d %T"), $NET_MESSAGE, $MEM_MESSAGE." >> srwatcher.log
+echo "$(date +"%Y/%m/%d %T"), $NET_MESSAGE, $MEM_MESSAGE." >> /var/log/srwatcher.log
